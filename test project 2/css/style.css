@@ -1,0 +1,246 @@
+/* css reset  */
+*{
+    margin:0;
+    padding:0;
+}
+/* navigation bar  */
+#navbar{
+    display:flex;
+    align-items: center;
+    
+}
+
+/* logo and image  */
+#logo{
+   margin:20px 45px;
+}
+#logo img{
+    width:140px;
+    height:140px;
+}
+#navbar{
+    position:relative;
+}
+/* list  */
+
+#navbar ul{
+    display:flex;
+    font-family: 'Cherry Cream Soda', cursive;
+}
+#navbar::before{
+   content:"";
+   background-color: black;
+   position: absolute;
+   top:0px;
+   left:0px;
+   height: 100%;
+   width:100%;
+   z-index: -1;
+   opacity: 0.5;
+}
+#navbar li a {
+    font-size: 1.8rem;
+    display: block;
+    padding:15px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    /* font-size: 1.5rem; */
+}
+#navbar ul li a:hover{
+  color:black;
+  background-color: white;
+  padding:15px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+/* home section  */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:696px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content:"";
+    position: absolute;
+   background:url('/img/plate.jpg') no-repeat center center/cover;
+    /* height: 100%; */
+    height:850px;
+   top:0px;
+   left:0px;
+   width:100%;
+   z-index: -1;
+   opacity: 0.8; 
+
+}
+#home h1{
+    
+    /* background-color: rgba(0, 0, 0, 0.479); */
+    color:black;
+    text-align: center;
+    margin:20px;
+    padding:5px;
+    font-family: 'Cherry Cream Soda', cursive;
+}
+#home p{
+    padding:5px;
+    /* background-color: rgba(0, 0, 0, 0.479); */
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Cherry Cream Soda', cursive;
+}
+/* service class */
+.services-container::before{
+    content:"";
+    position: absolute;
+    background: url('/img/cupcream.jpg') no-repeat center center/cover;
+    height: 70%;
+    width:100%;
+    z-index: -1;
+    opacity:0.8;
+    padding:34px;
+}
+
+  #services{
+    margin:34px;
+    display: flex;
+}
+#services .box{
+border:2px solid black;
+padding:34px;
+margin:30px;
+border-radius: 20px;
+background-color:  rgba(245, 221, 239, 0.623);
+}
+#services .box img{
+    height:156px;
+    margin:auto;
+    display:block;
+
+}
+#services .box p{
+    font-family: 'Cherry Cream Soda', cursive;
+}
+
+
+/* client section  */
+#client-section{
+    /* position: relative; */
+    height:344px;
+    margin-top:180px;
+    /* margin-bottom:200px; */
+}
+
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('/img/new.jpg') no-repeat center center/cover;
+    height: 50%;
+    width:100%;
+    z-index: -1;
+    opacity:0.8;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#clients img{
+    height: 140px;
+
+}
+.client-item{
+    padding:50px;
+}
+/* contact section  */
+#contact{
+    position: relative;
+    margin-top:158px;
+
+}
+#contact::before{
+    content:"";
+    position: absolute;
+   
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('/img/dark cake.jpg') no-repeat center center /cover;
+
+}
+/* #contact-box img{
+  height:140px;
+} */
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width:40%;
+   
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Cherry Cream Soda', cursive;
+}
+
+footer{
+    background-color: rgb(80, 74, 74);
+    color: white;
+    padding:20px;
+margin-top:10px;
+}
+/* utility class  */
+.h-primary{
+    font-size: 3.8rem;
+    margin:20px 20px;
+    padding:12px;
+    font-family: 'Cherry Cream Soda', cursive;
+}
+.h-sec{
+    font-size: 2.8rem;
+    padding:12px;
+    font-family: 'Cherry Cream Soda', cursive;
+}
+.btn{
+    padding:10px 20px;
+    border:2px solid black;
+    font-family: 'Cherry Cream Soda', cursive;
+    background-color: rgb(197, 190, 190);
+    margin: 15px;
+    font-size:1.5rem;
+border-radius: 20px;
+cursor:pointer;
+}
+.btn:hover{
+    color:rgb(197, 190, 190);
+    background-color: black;
+    border-color:rgb(197, 190, 190);
+}
+.center{
+    text-align: center;
+}
