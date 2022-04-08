@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musify-Let the Music live !</title>
+    <title>Spotify-Let the Music live !</title>
     <link rel="stylesheet" href="/pics/style.css">
 </head>
 
@@ -26,7 +26,7 @@
                     <span class="songName">Let me love you</span>
                     <span class="songlistplay"><span class="timestamp">
                             05:34
-                            <i class="far fa-1x fa-play-circle"></i>
+                            <i id="0" class="far songItemPlay fa-play-circle"></i>
                         </span> </span>
                 </div>
                 <div class="songItem">
@@ -34,7 +34,7 @@
                     <span class="songName">Let me love you</span>
                     <span class="songlistplay"><span class="timestamp">
                             05:34
-                            <i class="far fa-1x fa-play-circle"></i>
+                            <i id="1" class="far songItemPlay fa-play-circle"></i>
                         </span> </span>
                 </div>
                 <div class="songItem">
@@ -42,7 +42,7 @@
                     <span class="songName">Let me love you</span>
                     <span class="songlistplay"><span class="timestamp">
                             05:34
-                            <i class="far fa-1x fa-play-circle"></i>
+                            <i id="2" class="far songItemPlay fa-play-circle"></i>
                         </span> </span>
                 </div>
                 <div class="songItem">
@@ -50,7 +50,7 @@
                     <span class="songName">Let me love you</span>
                     <span class="songlistplay"><span class="timestamp">
                             05:34
-                            <i class="far fa-1x fa-play-circle"></i>
+                            <i id="3" class="far songItemPlay fa-play-circle"></i>
                         </span> </span>
                 </div>
                 <div class="songItem">
@@ -58,7 +58,7 @@
                     <span class="songName">Let me love you</span>
                     <span class="songlistplay"><span class="timestamp">
                             05:34
-                            <i class="far fa-1x fa-play-circle"></i>
+                            <i id="4" class="far songItemPlay fa-play-circle"></i>
                         </span> </span>
                 </div>
                 <div class="songItem">
@@ -66,7 +66,7 @@
                     <span class="songName">Let me love you</span>
                     <span class="songlistplay"><span class="timestamp">
                             05:34
-                            <i class="far fa-1x fa-play-circle"></i>
+                            <i id="5" class="far songItemPlay fa-play-circle"></i>
                         </span> </span>
                 </div>
                 <div class="songItem">
@@ -74,7 +74,7 @@
                     <span class="songName">Tera Hone Laga Hoon - Ajab Prem Ki Gajab Kahani</span>
                     <span class="songlistplay"><span class="timestamp">
                             05:34
-                            <i class="far fa-1x fa-play-circle"></i>
+                            <i  id="6" class="far songItemPlay fa-play-circle"></i>
                         </span> </span>
                 </div>
             </div>
@@ -86,13 +86,13 @@
         <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
         <div class="icons">
             <!-- fontawesome ions  -->
-            <i class="fas fa-3x fa-step-backward"></i>
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
             <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
-            <i class="fas fa-3x fa-step-forward"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
         </div>
         <div class="songInfo">
             <img src="audio.gif" width="50px" alt="" id="gif">
-            <div>Tera Hone Laga Hoon - Ajab Prem Ki Gajab Kahani</div>
+            <div><span id="masterSongName"></span> </div>
         </div>
     </div>
     <script src="/pics/script.js"></script>
